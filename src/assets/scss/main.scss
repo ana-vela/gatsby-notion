@@ -40,14 +40,14 @@
 		)
 	));
 
-	$size-header-width: 35%;
+	$size-header-width: 20%;
 	$size-header-pad: 4em;
 
 /* Basic */
 	[data-block-id] {
     max-width: 100%!important;
 	  }
-	  
+
 	body {
 		background: _palette(bg);
 
@@ -1199,7 +1199,7 @@
 
 	@include breakpoint(large) {
 
-		$size-header-width: 30%;
+		$size-header-width: 20%;
 		$size-header-pad: 3em;
 
 		/* Header */
