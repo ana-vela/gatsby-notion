@@ -17,8 +17,7 @@ export default ({ data }) => {
     <div style={{ margin: 10 }}>
       <Link to={`posts/${url}/`}>
         <div style={{ color: 'grey' }}>
-          Tags: {tags && tags.join(', ')} • Published: {publish_date} •{' '}
-          {read_time} MIN READ
+          Tags: {tags && tags.join(', ')} • Published: {publish_date}
         </div>
         <h2>{title}</h2>
         <p

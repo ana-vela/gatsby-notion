@@ -10,7 +10,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <div id = "main">
-        <div>{tags && tags.join(', ')}</div> 
+        <div>{tags && tags.join(', ')}</div>
         <h1>{title}</h1>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>

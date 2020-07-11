@@ -1,44 +1,58 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link } from "gatsby";
+import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 
 class HomeIndex extends React.Component {
+  render() {
+    const siteTitle = 'Ana Vela - Web Developer'
+    const siteDescription =
+      'Documenting my journey thorough the 100 days of code challenge'
 
-    render() {
-        const siteTitle = "Gatsby Starter - Strata"
-        const siteDescription = "Site description"
+    return (
+      <Layout>
+        <Helmet>
+          <title>{siteTitle}</title>
+          <meta name="description" content={siteDescription} />
+        </Helmet>
 
-        return (
-            <Layout>
-                <Helmet>
-                        <title>{siteTitle}</title>
-                        <meta name="description" content={siteDescription} />
-                </Helmet>
+        <div id="main">
+          <section id="one">
+            <header className="major">
+              <h2>100 Days of Code Challenge Blog</h2>
+            </header>
+            <p>
+              I'm sharing what I'm learning each day for the 100 Days of Code
+              challenge!{' '}
+            </p>
+            <ul className="actions">
+              <li>
+                <a
+                  href="https://www.100daysofcode.com/"
+                  target="_blank"
+                  className="button"
+                >
+                  Learn More about the 100 Days of Code Challenge
+                </a>
+              </li>
+            </ul>
+          </section>
 
-                <div id="main">
+          <section id="two">
+            <h2>Round 2 Daily Learning</h2>
 
-                    <section id="one">
-                        <header className="major">
-                            <h2>This is a starter for Gatsby.js V2, demonstrating successful integration with notion as a CMS</h2>
-                        </header>
-                        <p>Based on the Strata site template, designed by HTML5 UP.<br />Integrated with <a href="https://conradlin.com/blog/posts/host-gatsbyjs-blog-with-notion-cms-and-netlify-for-free/" target="_blank">notion</a> as a CMS for demonstration purposes by <a href="https://conradlin.com" target="_blank">Conrad Lin</a></p>
-                        <ul className="actions">
-                            <li><a href="https://www.youtube.com/watch?v=dMYKXVf88J0" target="_blank" className="button">Learn More</a></li>
-                        </ul>
-                    </section>
+            <ul className="actions">
+              <li>
+                <Link to={`blog`} className="button">
+                  100 Days of Code Blog
+                </Link>
+              </li>
+              {/*  <li><Link to={`subscribe`} className="button">All Newsletters</Link></li> */}
+            </ul>
+          </section>
 
-                    <section id="two">
-                        <h2>Recent Sharing</h2>
-
-                        <ul className="actions">
-                            <li><Link to={`blog`} className="button">All Articles</Link></li>
-                            <li><Link to={`subscribe`} className="button">All Newsletters</Link></li>
-                        </ul>
-                    </section>
-
-                    <section id="three">
+          {/*   <section id="three">
                         <h2>Get In Touch</h2>
                         <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
                         <div className="row">
@@ -74,12 +88,11 @@ class HomeIndex extends React.Component {
                             </div>
                         </div>
                     </section>
-
-                </div>
-
-            </Layout>
-        )
-    }
+                    */}
+        </div>
+      </Layout>
+    )
+  }
 }
 
 export default HomeIndex
