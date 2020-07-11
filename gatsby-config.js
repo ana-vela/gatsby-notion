@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Strata by HTML5 UP",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Strata by HTML5 UP"
+    title: '100 Days of Code Log',
+    author: 'Ana Vela',
+    description: 'Documenting my journey through the 100 days of code challenge',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -24,13 +24,15 @@ module.exports = {
         sourceConfig: [
           {
             name: 'posts',
-            table: 'https://www.notion.so/conradlin/1aa283fcd5ae4a73ba0f73c062de745e?v=6a40014bee144152b55203e2caf0c02e',
-            cacheType: 'html'
-          }
-        ]
-      }
+            table:
+              'https://www.notion.so/9cb09fd21f2f4e9cbf6eb44352f7958a?v=c2b6bdf8320a410f924adf952a2ed113',
+
+            cacheType: 'html',
+          },
+        ],
+      },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
   ],
 }
