@@ -15,7 +15,7 @@ class Header extends React.Component {
           <br />
           <h2>
             {' '}
-            Documenting My Coding Journey Learning JavaScript, React, and more!
+            Documenting My Journey Learning JavaScript, React, and more!
           </h2>
 
           <br />
@@ -25,7 +25,7 @@ class Header extends React.Component {
           </h3>
 
           <h3>
-            <Link to={`blog`}>Blog</Link>
+            <Link to={`/blog`}>Blog</Link>
           </h3>
         </div>
 
