@@ -20,7 +20,7 @@ class HomeIndex extends React.Component {
         <div id="main">
           <section id="one">
             <header className="major">
-              <h2>100 Days of Code Challenge Blog</h2>
+              <h2 style={{color:'#82699a'}} >100 Days of Code Challenge Blog</h2>
             </header>
             <p>
               I'm sharing what I'm learning each day for the 100 Days of Code
@@ -40,7 +40,7 @@ class HomeIndex extends React.Component {
           </section>
 
           <section id="two">
-            <h2>Round 2 Daily Learning</h2>
+            <h2 style={{color:' #82699a'}}>Round 2 Daily Learning</h2>
 
             <ul className="actions">
               <li>

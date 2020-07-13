@@ -30,7 +30,7 @@ export const query = graphql`
         read_time
         cover_image
         slug
-        publish_date(fromNow: false)
+        publish_date(formatString: "MMMM Do, YYYY")
       }
     }
   }

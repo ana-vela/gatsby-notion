@@ -11,8 +11,9 @@ export default ({ data }) => {
     <Layout>
       <div id = "main">
         <div>{tags && tags.join(', ')}</div>
-        <h1>{title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <h1 style={{ fontSize: '30px', color: '#82699a', fontWeight:'bold', marginBottom: '10px'}}>{title}</h1>
+        <div>{publish_date}</div>
+        <div style={{ color: '#555555'}} dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>
   )
@@ -24,7 +25,7 @@ export const query = graphql`
       html
       title
       tags
-      publish_date
+      publish_date(formatString: "MMMM Do, YYYY")
       url
       desc
       color

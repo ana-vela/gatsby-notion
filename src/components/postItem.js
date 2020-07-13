@@ -14,17 +14,20 @@ export default ({ data }) => {
   } = data
 
   return (
-    <div style={{ margin: 10 }}>
+    <div style={{ margin: 5 }}>
       <Link to={`posts/${url}/`}>
-        <div style={{ color: 'grey' }}>
+        <div style={{ color: 'gray' }}>
           Tags: {tags && tags.join(', ')} • Published: {publish_date}
         </div>
-        <h2>{title}</h2>
+        <div>
+        <h2 style={{color: '#82699a', fontSize: '22px', marginBottom: '-5px'}}>{title}</h2>
         <p
-          style={{ color: 'black' }}
+          style={{ color: '#555555'}}
           dangerouslySetInnerHTML={{ __html: desc }}
         ></p>
+        </div>
       </Link>
+      <br />
     </div>
   )
 }
