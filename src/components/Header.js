@@ -8,9 +8,9 @@ class Header extends React.Component {
     return (
       <header id="header">
         <div className="inner">
-          <Link to="/" className="image avatar">
+        {/*  <Link to="/" className="image avatar">
             <img src={avatar} alt="" />
-          </Link>
+          </Link> */}
           <h1>100 Days of Code Challenge</h1>
           <br />
           <h2>
