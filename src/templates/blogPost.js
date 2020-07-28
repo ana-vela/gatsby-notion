@@ -11,7 +11,7 @@ export default ({ data }) => {
     <Layout>
       <div id = "main">
         <div>{tags && tags.join(', ')}</div>
-        <h1 style={{ fontSize: '30px', color: '#82699a', fontWeight:'bold', marginBottom: '10px'}}>{title}</h1>
+        <h1 style={{ fontSize: '30px', color: '#040080', fontWeight:'bold', marginBottom: '10px'}}>{title}</h1>
         <div>{publish_date}</div>
         <div style={{ color: '#555555'}} dangerouslySetInnerHTML={{ __html: html }} />
       </div>

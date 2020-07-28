@@ -20,7 +20,7 @@ export default ({ data }) => {
           Tags: {tags && tags.join(', ')} • Published: {publish_date}
         </div>
         <div>
-        <h2 style={{color: '#82699a', fontSize: '22px', marginBottom: '-5px'}}>{title}</h2>
+        <h2 style={{color: '#040080', fontSize: '22px', marginBottom: '-5px'}}>{title}</h2>
         <p
           style={{ color: '#555555'}}
           dangerouslySetInnerHTML={{ __html: desc }}
