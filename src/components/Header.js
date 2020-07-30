@@ -11,7 +11,7 @@ class Header extends React.Component {
         {/*  <Link to="/" className="image avatar">
             <img src={avatar} alt="" />
           </Link> */}
-          <h1>100 Days of Code Challenge</h1>
+          <h1>Anavee Codes</h1>
           <br />
           <h2>
             {' '}
@@ -23,6 +23,9 @@ class Header extends React.Component {
           <h3>
             <Link to={`/`}>Home</Link>
           </h3>
+        {/*  <h3>
+            <Link to={`/starthere`}>Start Here</Link>
+          </h3> */}
 
           <h3>
             <Link to={`/blog`}>Blog</Link>

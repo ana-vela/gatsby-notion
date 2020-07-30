@@ -17,7 +17,7 @@
 
 // Font.
 	$font: (
-		family:				('Roboto', Helvetica, sans-serif),
+		family:				('Montserrat', 'Roboto', Helvetica, sans-serif),
 		family-fixed:		('Courier New', monospace),
 		weight:				400,
 		weight-bold:		400
@@ -26,7 +26,7 @@
 // Palette.
 	$palette: (
 		bg:					#fff,
-		fg:					#a2a2a2,
+		fg:					#292929,
 		fg-bold:			#787878,
 		fg-light:			#b2b2b2,
 		border:				#efefef,
@@ -46,7 +46,7 @@
 		),
 
 		accent2: (
-			bg:				#001540,
+			bg:				#4d6d9a,
 			fg:				rgb(255, 255, 255),
 			fg-bold:		#ffffff,
 			fg-light:		rgba(255,255,255,0.4),
