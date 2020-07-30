@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: '100 Days of Code Log',
     author: 'Ana Vela',
-    description: 'Documenting my journey through the 100 days of code challenge',
+    description:
+      'Documenting my journey through the 100 days of code challenge',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -38,19 +39,25 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Quicksand','Montserrat','Poppins', 'Roboto', 'Droid Serif']
-        }
-      }
+          families: [
+            'Quicksand',
+            'Montserrat',
+            'Poppins',
+            'Roboto',
+            'Droid Serif',
+          ],
+        },
+      },
     },
     {
-    resolve: 'gatsby-plugin-crisp-chat',
-    options: {
-      // websiteId: 'YOUR_CRISP_WEBSITE_ID',
-      websiteId: 'process.env.CRISP_WEBSITE_ID',
-      enableDuringDevelop: true, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
-      defer: true, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
-      enableImprovedAccessibility: false // Optional. Sets aria-label attribute on pop-up icon for screen readers. Defaults to true.
+      resolve: 'gatsby-plugin-crisp-chat',
+      options: {
+        // websiteId: 'YOUR_CRISP_WEBSITE_ID',
+        websiteId: '5412ca72-45ce-4061-a754-fa077ea45b68',
+        enableDuringDevelop: true, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
+        defer: true, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
+        enableImprovedAccessibility: true, // Optional. Sets aria-label attribute on pop-up icon for screen readers. Defaults to true.
+      },
     },
-  }
   ],
 }
